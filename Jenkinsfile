@@ -2,7 +2,7 @@ node{
     def mavenHome = tool name: 'maven3.8.6'
     
     stage('1 Clone Repo'){
-        git 'https://github.com/Patioco/maven-web-app.git'
+        git 'https://github.com/Patioco/pet-clinic-war.git'
     }
     stage('2 Maven Build'){
         sh "${mavenHome}/bin/mvn clean package"
